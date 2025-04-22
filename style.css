@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+@keyframes appear {
+    from {
+        margin-top: 3.5rem;
+        opacity: 0;
+        
+    }
+    to {
+        margin-top: 0;
+        opacity: 1;
+        
+    }
+}
+
+body {
+    
+    background: url('images/Twitter-Black-Web-Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200rem;
+}
+
+.wrapper {
+    height: 130vh;
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+
+    margin-left: 3rem;
+    margin-right: 3rem;
+    align-items: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-bottom: 9rem;
+    padding-top: 6rem;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    
+    margin-right: 1rem;
+    
+}
+.login {
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    margin-left: 1rem;
+}
+.image {
+    height: 277px;
+    width: 920px;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    font-size: 3.2rem;
+    border-bottom: 3px solid white;
+    margin-right: 6rem;
+    margin-left: 4rem;
+    animation: appear 1.4s linear;
+    
+}
+.card {
+    width: 60px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
+
+
+input {
+    display: none;
+    
+}
+
+input:checked + label {
+    width: 300px;
+    border: 2px solid rgb(34, 34, 34);
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('./images/IMG-20250105-WA0041.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgb(34, 34, 34);
+}
+.card[for="c2"] {
+    background-image: url('./images/IMG-20250105-WA0040.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgb(34, 34, 34);
+}
+.card[for="c3"] {
+    background-image: url('./images/IMG-20250105-WA0038.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgb(34, 34, 34);
+}
+.card[for="c4"] {
+    background-image: url('./images/IMG-20250105-WA0036.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgb(34, 34, 34);
+}
+.card[for="c5"] {
+    background-image: url('./images/IMG-20250105-WA0055.jpg');
+    background-size: cover;
+    background-position: center top;
+    border: 2px solid rgb(34, 34, 34);
+}
+
+.profile-pic{
+    display: inline-block;
+    vertical-align: middle;
+     width: 50px;
+     height: 50px;
+     overflow: hidden;
+    border-radius: 50%;
+}
+  
+.profile-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.profile-menu .dropdown-menu {
+   right: 0;
+   left: unset;
+}
+.profile-menu .fa-fw {
+   margin-right: 10px;
+}
+.profile-menu {
+  margin-right: 4.3rem;
+}
+  
+.toggle-change::after {
+   border-top: 0;
+   border-bottom: 0.3em solid;
+}
+.navbar {
+  background: rgba(255, 255, 255, 0.158);
+}
+
+
+.haut {
+    
+    height: 300vh;
+    margin: 0 auto;
+    width: 100%; 
+    display: flex;
+    
+    
+    flex-direction: column;
+    
+}
+
+
+
+.tout {
+
+    width: 100%;
+    height: 200rem;
+    
+}
+
+
+.bi-house-door {
+    margin-right: 14px;
+}
+
+.deux {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background: transparent;
+    border-radius: 70px 70px 7px;
+    margin: 0 auto;
+}
+video {
+    scale: 0.78;
+   
+}
+.p1 {
+    display: flex;
+    flex-direction: row;
+    
+}
+h2 {
+    margin-top: 4rem;
+}
+.p2 {
+    margin-top: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.blabla {
+    width: 24rem;
+    height: 35rem;
+}
+.bla1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1.2rem;
+}
+.blabla2 {
+    width: 24rem;
+}
+.partie1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.partie1 h2::first-letter{
+    color: rgba(168, 210, 233, 0.664);
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.p3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 14rem;
+    margin-bottom: 4rem;
+    border-bottom: 2px solid white;
+}
+.p4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.p7 {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    width: 80%;
+    border-bottom: 2px solid white;
+}
+.p5 {
+    margin: auto 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.p8 img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+   
+}
+.voirplus {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 1.5rem;
+    width: 20%;
+    padding: 4px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    transition: 0.5s;
+    margin-left: 7%;
+    
+}
+.voirplus:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    scale: 1.07;
+}
