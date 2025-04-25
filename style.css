@@ -54,7 +54,7 @@ body {
     margin-left: 1rem;
 }
 .image {
-    height: 277px;
+    height: fit-content;
     width: 920px;
     font-family: 'Times New Roman', Times, serif;
     color: aliceblue;
