@@ -14,5 +14,31 @@
 }
 .p2b {
     margin-right: 3rem;
+}
+.p3b {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: auto auto;
+}
+
+.voirplus {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    width: 25%;
+    padding: 4px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    transition: 0.5s;
+    margin-left: 7%;
+    margin-top: 10%;
     
+}
+.voirplus:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    scale: 1.07;
 }
